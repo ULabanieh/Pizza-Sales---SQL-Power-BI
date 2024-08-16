@@ -13,6 +13,10 @@ SELECT pizza_category, SUM(total_price) * 100 / (SELECT SUM(total_price) FROM pi
 FROM pizza_sales 
 GROUP BY pizza_category
 
+SELECT pizza_category, SUM(total_price) AS total_sales
+FROM pizza_sales 
+GROUP BY pizza_category
+
 
 -- Extra, not needed for requirements
 SELECT pizza_category, SUM(total_price) AS total_sales, SUM(total_price) * 100 / (SELECT SUM(total_price) FROM pizza_sales WHERE MONTH(order_date) = 1) AS pct_sales
