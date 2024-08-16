@@ -102,6 +102,7 @@ FROM pizza_sales
 ```
 
 ![[Picture4.png]]
+
 ### 5. **Average Pizzas per Order**
 ```SQL
 SELECT CAST(SUM(quantity) AS DECIMAL(10,2)) / CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS average_pizzas_per_order
@@ -137,6 +138,7 @@ ORDER BY total_orders DESC
 ```
 
 Output:
+
 ![Picture7](https://github.com/user-attachments/assets/9ca08439-a825-4195-85cc-8bc4413b0bbf)
 
 ### 3. **Percentage of Sales by Pizza Category**
@@ -163,6 +165,7 @@ ORDER BY pct_sales DESC
 
 
 Output:
+
 ![Picture9](https://github.com/user-attachments/assets/0091bfad-8a6b-41cf-8dbd-14bbbda2a490)
 
 ### 5. **Total Pizzas Sold by Pizza Category**
