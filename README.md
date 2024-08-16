@@ -101,7 +101,9 @@ SELECT COUNT(DISTINCT order_id) AS total_orders
 FROM pizza_sales
 ```
 
-![[Picture4.png]]
+Output:
+
+![Picture4](https://github.com/user-attachments/assets/8c486bc4-36d8-4abd-8091-1251deffd843)
 
 ### 5. **Average Pizzas per Order**
 ```SQL
