@@ -6,8 +6,7 @@ The data used for this project is from the year 2015.
 
 Here is a walkthrough video of the dashboard and its different parts:
 
-![[2024-08-16 11-40-34.mkv]]
-
+https://github.com/user-attachments/assets/6ba89698-afca-443d-b3d6-bd3ba8294c30
 
 ## Problem Statement
 ---
