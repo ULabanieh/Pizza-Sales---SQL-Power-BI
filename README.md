@@ -68,7 +68,8 @@ FROM pizza_sales;
 
 Output:
 
-![[Picture1.png]]
+![Picture1](https://github.com/user-attachments/assets/d33c784a-46d9-40fb-b7bd-95dcd82f0c8c)
+
 
 ### 2. **Average Order Value**
 
@@ -79,7 +80,8 @@ FROM pizza_sales
 
 Output:
 
-![[Picture2.png]]
+![Picture2](https://github.com/user-attachments/assets/8ce232bb-c072-4671-af72-f56610dc5e57)
+
 
 ### 3. **Total Pizzas Sold**
 
@@ -90,7 +92,8 @@ FROM pizza_sales
 
 Output:
 
-![[Picture3.png]]
+![Picture3](https://github.com/user-attachments/assets/6797f7bc-8509-4267-af28-d2a1233aa031)
+
 
 ### 4. **Total Orders**
 ```SQL
@@ -107,7 +110,8 @@ FROM pizza_sales
 
 Output:
 
-![[Picture5.png]]
+![Picture5](https://github.com/user-attachments/assets/5b2e8c3b-3c13-499e-80d3-87cfb28cc394)
+
 
 ## Queries for Charts Requirements
 ---
@@ -120,7 +124,8 @@ GROUP BY DATENAME(DW, order_date)
 ```
 
 Output:
-![[Picture6.png]]
+![Picture6](https://github.com/user-attachments/assets/02292711-f98f-4798-9162-88853a5ed82f)
+
 ### 2. **Monthly Trend for Total Orders**
 
 ```SQL
@@ -131,7 +136,8 @@ ORDER BY total_orders DESC
 ```
 
 Output:
-![[Picture7.png]]
+![Picture7](https://github.com/user-attachments/assets/9ca08439-a825-4195-85cc-8bc4413b0bbf)
+
 ### 3. **Percentage of Sales by Pizza Category**
 
 ```SQL
@@ -142,7 +148,8 @@ GROUP BY pizza_category
 
 
 Output:
-![[Picture8.png]]
+![Picture8](https://github.com/user-attachments/assets/85bbcf6d-9cd2-45d9-98d8-274db1322a0f)
+
 ### 4. **Percentage of Sales by Pizza Size**
 
 ```SQL
@@ -154,7 +161,8 @@ ORDER BY pct_sales DESC
 
 
 Output:
-![[Picture9.png]]
+![Picture9](https://github.com/user-attachments/assets/0091bfad-8a6b-41cf-8dbd-14bbbda2a490)
+
 ### 5. **Total Pizzas Sold by Pizza Category**
 
 ```SQL
@@ -165,7 +173,8 @@ GROUP BY pizza_category
 
 
 Output:
-![[1446-02-06 09_06_51-Charts Requirements.sql - DESKTOP-UI79E1N_MSSQLSERVER01.PizzaSales (DESKTOP-UI79.png]]
+![1446-02-06 09_06_51-Charts Requirements sql - DESKTOP-UI79E1N_MSSQLSERVER01 PizzaSales (DESKTOP-UI79](https://github.com/user-attachments/assets/c5fed0de-b99f-488e-85af-a68bd53643a5)
+
 
 
 ### 6. **Top 5 Best Sellers by Revenue, Total Quantity and Total Orders**
@@ -188,9 +197,10 @@ ORDER BY SUM(total_price) DESC
 ```
 
 Output:
-![[Picture10.png]]
-![[Picture11.png]]
-![[Picture12.png]]
+![Picture10](https://github.com/user-attachments/assets/5c8c8d83-988e-49b8-9b17-adc2b2f94254)
+![Picture11](https://github.com/user-attachments/assets/e472638e-92f8-4e10-b8d9-d346c4aceb34)
+![Picture12](https://github.com/user-attachments/assets/244e82d3-ac70-44d1-8ee3-e559b94e7756)
+
 ### 7. **Bottom 5 Best Sellers by Revenue, Total Quantity and Total Orders**
 
 ```SQL
@@ -212,9 +222,10 @@ ORDER BY SUM(total_price) ASC
 
 
 Output:
-![[Picture13.png]]
-![[Picture14.png]]
-![[Picture15.png]]
+![Picture13](https://github.com/user-attachments/assets/9453d474-0964-4ee6-98a0-a594c95b07e2)
+![Picture14](https://github.com/user-attachments/assets/64c0a571-a41e-46b4-b61a-05bf343ed5c7)
+![Picture15](https://github.com/user-attachments/assets/c385cc49-62ad-467c-a110-ed5ec425a06e)
+
 
 # Power BI Visualizations
 ---
@@ -271,7 +282,8 @@ Now, let's get into taking a look at our visualizations in more detail.
 ---
 Showcases our KPIs on the top of our dashboard using the new card visual in Power BI. The cards display the value on top and the parameter or KPI on the bottom and they are center aligned. I added shadow and glow and an accent bar on the left side to give it some style. I also added some images to provide a visual clarification and appeal to what each KPI signifies.
 
-![[1446-02-08 19_16_24-Pizza Sales Report (Final).png]]
+![1446-02-08 19_16_24-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/1e61cafe-a28b-4d41-9da8-caa887aebd1d)
+
 
 
 ### Daily Trend for Total Orders
@@ -280,45 +292,49 @@ A bar chart that uses the Order Day and Total Orders measures to showcase the di
 
 The bars are sorted in the correct order of weekdays starting on Sunday and ending on Saturday. To do this sorting, I created a new measure by creating a new column that assigns a number to each day name in the desired order.
 
-![[1446-02-08 19_25_32-Pizza Sales Report (Final).png]]
+![1446-02-08 19_25_32-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/87921b6c-cf98-406b-868e-8f6768809145)
+
 
 ### Monthly Trend for Total Orders
 ---
 An area line chart that uses the Order Month and Total Orders measures to showcase the distribution of pizza orders by months of the year. To sort the data by month, I extracted in a new column the month number and then sorted the chart by the Month Number column in ascending order. Removed guidelines as in the previous chart, changed the colors to make it more appealing and added data labels to illustrate better the number of orders per each month.
 
 
-![[1446-02-12 09_33_50-Pizza Sales Report (Final).png]]
+![1446-02-12 09_33_50-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/3921ad99-9972-49eb-862c-fb36d4da9cbe)
 
 
 ### % of Sales by Pizza Category
 ---
 A pie chart that showcases the percentage of sales by each Pizza category (Classic, Supreme, Chicken, Veggie)
 
-![[1446-02-12 09_58_15-Pizza Sales Report (Final).png]]
+![1446-02-12 09_58_15-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/860a0076-c9a4-4286-819e-78c60412f9f5)
+
 
 ### % of Sales by Pizza Size
 ---
 A pie chart that showcases the percentage of sales by each Pizza size (Large, Medium, Regular, X-Large, XX-Large)
 
-![[1446-02-12 09_59_16-Pizza Sales Report (Final).png]]
+![1446-02-12 09_59_16-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/455a88ec-6b11-49c0-8180-56bab793d56b)
+
 
 ### Total Pizzas Sold by Pizza Category
 ---
 A funnel chart that showcases the total number of sales by pizza category. Used conditional formatting to color the bars and highlight the highest value. Adjusted the text formatting and I displayed the numbers as full value instead of rounding to something like 15k.
 
-![[1446-02-12 10_16_49-Pizza Sales Report (Final).png]]
+![1446-02-12 10_16_49-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/166cae27-12fc-44b5-bcdd-0063f5d1d569)
+
 
 
 ### **Top 5 Best Sellers by Revenue, Total Quantity and Total Orders**
 ---
 3 horizontal bar charts that showcase the top 5 pizzas in 3 parameters: Revenue (the pizzas that generated the most revenue for the restaurant), Total Quantity (the pizzas with the highest number of units sold) and Total Orders (the pizzas with the highest number of orders placed). I used different color gradients for each of these parameters to distinguish them from each other and keep consistency with the charts for bottom 5 pizzas on the same parameter
 
-![[1446-02-12 10_23_50-Pizza Sales Report (Final).png]]
-
+![1446-02-12 10_23_50-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/e54bfa4c-c789-4ebd-a098-5b12555359c5)
 
 
 ### **Bottom 5 Best Sellers by Revenue, Total Quantity and Total Orders**
 ---
 3 horizontal bar charts that showcase the bottom 5 pizzas in 3 parameters: Revenue (the pizzas that generated the least revenue for the restaurant), Total Quantity (the pizzas with the lowest number of units sold) and Total Orders (the pizzas with the lowest number of orders placed). I used different color gradients for each of these parameters to distinguish them from each other and keep consistency with the charts for top 5 pizzas on the same parameter.
 
-![[1446-02-12 10_24_52-Pizza Sales Report (Final).png]]
+![1446-02-12 10_24_52-Pizza Sales Report (Final)](https://github.com/user-attachments/assets/75359328-6bb7-4c06-9620-2e746d1e1196)
+
