@@ -124,6 +124,7 @@ GROUP BY DATENAME(DW, order_date)
 ```
 
 Output:
+
 ![Picture6](https://github.com/user-attachments/assets/02292711-f98f-4798-9162-88853a5ed82f)
 
 ### 2. **Monthly Trend for Total Orders**
@@ -148,6 +149,7 @@ GROUP BY pizza_category
 
 
 Output:
+
 ![Picture8](https://github.com/user-attachments/assets/85bbcf6d-9cd2-45d9-98d8-274db1322a0f)
 
 ### 4. **Percentage of Sales by Pizza Size**
@@ -173,6 +175,7 @@ GROUP BY pizza_category
 
 
 Output:
+
 ![1446-02-06 09_06_51-Charts Requirements sql - DESKTOP-UI79E1N_MSSQLSERVER01 PizzaSales (DESKTOP-UI79](https://github.com/user-attachments/assets/c5fed0de-b99f-488e-85af-a68bd53643a5)
 
 
@@ -197,8 +200,11 @@ ORDER BY SUM(total_price) DESC
 ```
 
 Output:
+
 ![Picture10](https://github.com/user-attachments/assets/5c8c8d83-988e-49b8-9b17-adc2b2f94254)
+
 ![Picture11](https://github.com/user-attachments/assets/e472638e-92f8-4e10-b8d9-d346c4aceb34)
+
 ![Picture12](https://github.com/user-attachments/assets/244e82d3-ac70-44d1-8ee3-e559b94e7756)
 
 ### 7. **Bottom 5 Best Sellers by Revenue, Total Quantity and Total Orders**
@@ -222,8 +228,11 @@ ORDER BY SUM(total_price) ASC
 
 
 Output:
+
 ![Picture13](https://github.com/user-attachments/assets/9453d474-0964-4ee6-98a0-a594c95b07e2)
+
 ![Picture14](https://github.com/user-attachments/assets/64c0a571-a41e-46b4-b61a-05bf343ed5c7)
+
 ![Picture15](https://github.com/user-attachments/assets/c385cc49-62ad-467c-a110-ed5ec425a06e)
 
 
