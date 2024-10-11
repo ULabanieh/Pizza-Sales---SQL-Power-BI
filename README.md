@@ -1,4 +1,4 @@
-# Project Overview
+# 🍕 Project Overview
 ---
 This project combines SQL and Power BI to create a beautiful dashboard with data on the performance of a pizza restaurant's sales. We will look at the problem statement and create a dashboard that adapts to the requirements from the stakeholder and shows the information needed. The project is divided into 2 parts, the first part is the SQL queries which will give us the basis of the data that will later be used for the visualizations and dashboard. 
 
